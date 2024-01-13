@@ -4,7 +4,7 @@ from utilities import get_yt, transcribe_yt
 
 st.markdown('# 📝 **Content Moderation App**')
 
-st.warning('Awaiting URL input in the sidebar.')
+st.warning('waiting for URL input in the left sidebar.')
 
 
 # Sidebar
@@ -28,4 +28,4 @@ if submit_button:
         )
 
 with st.sidebar.expander('Example URL'):
-	st.code('https://www.youtube.com/watch?v=twG4mr6Jov0')
+	st.code('https://youtu.be/k7HFMq7jKLc?si=7JIs4Y8ajrk41tDU')
