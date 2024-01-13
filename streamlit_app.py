@@ -2,7 +2,8 @@ import streamlit as st
 from pytube import YouTube
 from utilities import get_yt, transcribe_yt
 
-st.markdown('# 📝 **Content Moderation App**')
+st.markdown('# 📝 ** Content extraction App**
+---amaresh--')
 
 st.warning('waiting for URL input in the left sidebar.')
 
@@ -28,4 +29,4 @@ if submit_button:
         )
 
 with st.sidebar.expander('Example URL'):
-	st.code('https://youtu.be/k7HFMq7jKLc?si=7JIs4Y8ajrk41tDU')
+	st.code('https://youtu.be/UwsrzCVZAb8?si=GGY_brAQsm09VRab')
