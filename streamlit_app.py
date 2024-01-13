@@ -2,8 +2,7 @@ import streamlit as st
 from pytube import YouTube
 from utilities import get_yt, transcribe_yt
 
-st.markdown('# 📝 ** Content extraction App**
----amaresh--')
+st.markdown('# 📝 ** Content extraction App**---amaresh--')
 
 st.warning('waiting for URL input in the left sidebar.')
 
