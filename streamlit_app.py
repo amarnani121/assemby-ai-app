@@ -3,7 +3,7 @@ from pytube import YouTube
 from utilities import get_yt, transcribe_yt
 from PIL import Image
 
-img = Image.open(pic())
+img = Image.open("https://amarnani.000webhostapp.com/wp-content/uploads/2024/01/668579e4-fb37-40bd-b367-03a829bf0193-1-643x1024.jpg")
 st.image(img)
 st.markdown('# 📝 ** Content extraction App** ')
 st.markdown('-created by amaresh')
