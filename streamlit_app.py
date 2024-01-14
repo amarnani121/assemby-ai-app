@@ -11,11 +11,11 @@ st.warning('waiting for URL input in the left sidebar.')
 
 
 # Sidebar
-st.sidebar.header('Input parameter')
+st.header('Input parameter')
 
-with st.sidebar.form(key='my_form'):
+with st.form(key='my_form'):
 	URL = st.text_input('Enter URL of YouTube video:')
-	submit_button = st.form_submit_button(label='Go')
+	submit_button = st.form_submit_button(label='Go submit🔥')
 
 # Run custom functions if URL is entered 
 if submit_button:
@@ -30,6 +30,6 @@ if submit_button:
             mime="application/zip"
         )
 
-with st.sidebar.expander('Example URL'):
+with st.expander('Example URL'):
 	st.markdown("example of youtube video:The Brief history of ai")
 	st.code('https://youtu.be/056v4OxKwlI?si=AnhcUiYMwSFd4Gbe')
