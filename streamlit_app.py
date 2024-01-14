@@ -1,7 +1,10 @@
 import streamlit as st
 from pytube import YouTube
 from utilities import get_yt, transcribe_yt
+from PIL import Image
 
+img = Image.open(pic())
+st.image(img)
 st.markdown('# 📝 ** Content extraction App** ')
 st.markdown('-created by amaresh')
 st.warning('waiting for URL input in the left sidebar.')
