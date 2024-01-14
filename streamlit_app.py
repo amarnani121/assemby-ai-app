@@ -28,5 +28,5 @@ if submit_button:
         )
 
 with st.sidebar.expander('Example URL'):
-	st.markdown('example of youtube video:The Life Story of Elon Musk')
-	st.code('https://youtu.be/vpcDnBH4Ps8?si=-WgfwIecgx0s7LY1')
+	st.markdown("example of youtube video:The Brief history of ai")
+	st.code('https://youtu.be/056v4OxKwlI?si=AnhcUiYMwSFd4Gbe')
