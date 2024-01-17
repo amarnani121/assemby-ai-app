@@ -7,11 +7,11 @@ from PIL import Image
 st.image("https://amarnani.000webhostapp.com/wp-content/uploads/2024/01/cropped-668579e4-fb37-40bd-b367-03a829bf0193-1-scaled-1.jpg")
 st.markdown('# 📝 ** Content extraction App** ')
 st.markdown('-created by amaresh')
-st.warning('waiting for URL input in the left sidebar.')
+st.warning('waiting for URL input.')
 
 
 # Sidebar
-st.header('Input parameter')
+st.header('Input')
 
 with st.form(key='my_form'):
 	URL = st.text_input('Enter URL of YouTube video:')
