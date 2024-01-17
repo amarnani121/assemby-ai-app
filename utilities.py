@@ -81,6 +81,14 @@ def transcribe_yt():
     # Check if transcription is complete
 
     st.warning('Transcription is processing ...hey user if u are bored try my  amazing amars friday Ai bot')
+    
+
+# Your linkm
+    your_link = "https://amarnani.000webhostapp.com/"
+
+# Display the link using markdown
+    st.markdown(f"[Your Link]({your_link})")
+
     while transcript_output_response.json()['status'] != 'completed':
         sleep(1)
         transcript_output_response = requests.get(endpoint, headers=headers)
