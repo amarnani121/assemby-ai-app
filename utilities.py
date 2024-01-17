@@ -80,7 +80,7 @@ def transcribe_yt():
 
     # Check if transcription is complete
 
-    st.warning('Transcription is processing ...')
+    st.warning('Transcription is processing ...hey user if u are bored try my  amazing amars friday Ai bot')
     while transcript_output_response.json()['status'] != 'completed':
         sleep(1)
         transcript_output_response = requests.get(endpoint, headers=headers)
@@ -101,16 +101,16 @@ def transcribe_yt():
     yt_txt.close()
 
     # 9. Write JSON to app
-    with st.expander('Show Full Results'):
+    '''with st.expander('Show Full Results'):
         st.write(transcript_output_response.json())
     
-    # 10. Write content_safety_labels
+     10. Write content_safety_labels
     with st.expander('Show content_safety_labels'):
         st.write(transcript_output_response.json()["content_safety_labels"])
     
     with st.expander('Summary of content_safety_labels'):
         st.write(transcript_output_response.json()["content_safety_labels"]["summary"])
-        
+    '''    
     # Save as SRT file
     srt_endpoint = endpoint + "/srt"
     srt_response = requests.get(srt_endpoint, headers=headers)
